@@ -1,0 +1,12 @@
+.button-red{
+    @include boton($etico);
+}
+
+.button-green{
+    @include boton($verde);
+}
+
+.button-orange{
+    @include boton($naranja);
+}
+

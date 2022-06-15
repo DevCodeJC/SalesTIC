@@ -1,0 +1,16 @@
+.container-purchase{
+    width: 70%;
+    max-width: 120rem;
+    margin: 0 auto 3rem auto;
+    
+    @include tablet{
+        width: 50%;
+    }
+}
+.purchase{
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}

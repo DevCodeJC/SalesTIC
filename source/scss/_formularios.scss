@@ -1,0 +1,57 @@
+.formulario{
+    
+    h4{
+        text-align: center  ;
+    }
+
+    legend{
+        font-size: 2rem;
+        color: darken($gris, 80);
+    }
+    label{
+        font-weight: bold;
+        display: block;
+        margin-top: 1.5rem;
+    }
+    
+    input:not([type="submit"]), select{
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 0.5rem;
+        display: block;
+        width: 100%;
+        background-color: $blanco;
+        border: 1px solid $lineas;
+        border-radius: 1rem;
+    }
+    @include tablet{
+        .features{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 7rem 30% 10rem 30%;
+            gap: 1rem;
+            label{
+                margin-top: 0;
+            }
+        }
+        
+    }
+}
+
+.terms{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 1rem;
+    input[type="checkbox"]{
+        margin: 0;
+    }
+    p{
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    a{
+        font-weight: 600;
+    }
+}

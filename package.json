@@ -1,0 +1,27 @@
+{
+  "name": "tienda",
+  "version": "1.0.0",
+  "description": "Tienda de tecnologia realizada con GULP, SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch source/scss:css",
+    "css": "gulp css",
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "Gulp",
+    "SASS",
+    "php"
+  ],
+  "author": "Juan Carlos Perez Ortiz",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.52.3"
+  }
+}

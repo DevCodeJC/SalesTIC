@@ -1,0 +1,38 @@
+@mixin celular{
+    @media (min-width: 480px) {
+        @content;
+    }
+}
+@mixin tablet{
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+@mixin desktop{
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+@mixin boton($buttoncolor){
+    display: block;//display: inline-block para que no tome todo el espacio
+    background-color: $buttoncolor;
+    color: $blanco;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    border: none;
+
+    &:hover{
+        background-color: darken($buttoncolor, 5);
+        cursor: pointer;
+    }
+}
+/*mixin de Grid
+@mixin grid($columnas, $espaciado){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+
+*/
