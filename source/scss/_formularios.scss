@@ -1,5 +1,4 @@
 .formulario{
-    
     h4{
         text-align: center  ;
     }
@@ -13,7 +12,9 @@
         display: block;
         margin-top: 1.5rem;
     }
-    
+    .button-long{
+        width: 100%;
+    } 
     input:not([type="submit"]), select{
         font-size: 1.4rem;
         font-weight: 600;
@@ -22,8 +23,9 @@
         width: 100%;
         background-color: $blanco;
         border: 1px solid $lineas;
-        border-radius: 1rem;
+        //border-radius: 1rem;
     }
+      
     @include tablet{
         .features{
             display: grid;
@@ -35,7 +37,6 @@
                 margin-top: 0;
             }
         }
-        
     }
 }
 

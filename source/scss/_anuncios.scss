@@ -3,12 +3,10 @@
     margin-bottom: 0;
     padding: 1rem;
     text-align: center;
-
 }
 .container-kits{
     margin-bottom: 2rem;
 }
-
 @include celular{
     .container-kits{
         display: grid;
@@ -16,7 +14,6 @@
         column-gap: 2rem;
     }
 }
-
 @include tablet{
     .container-kits{
         display: grid;
@@ -24,18 +21,28 @@
         column-gap: 2rem;
     }
 }
-
+@include desktop{
+    .container-kits{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+    }
+}
 .kit{
     //display: grid;
     //grid-template-rows: 30% 70%;
     background-color: $blanco;
     border: 1px solid $lineas;
     margin-bottom: 2rem;
-
     //.kit-imagen{
     //    justify-content: center;
     //}
-
+    .kit-id{
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: bold;
+        margin: 0.5rem;
+    }
     .kit-description{
         padding: 1.5rem;
     }
@@ -46,9 +53,12 @@
     }
     p{
         padding: 1rem;
-        padding-top: 0;
+        padding: 0;
         margin: 0;
         font-size: 1.3rem;
+    }
+    .kit-obs{
+        text-align: center;
     }
     .price{
         font-size: 2.5rem;
@@ -61,9 +71,11 @@
         font-weight: 600;
     }
 }
+
 .icon-properties{
     list-style: none;
     padding: 0;
+    margin: 0.5rem 0 1rem 0;
     li{
         display: grid;
         grid-template-columns: 15% 85%;
@@ -76,6 +88,5 @@
             max-width: 100%;
             max-width: 2.5rem;
         }
-
     }
 }

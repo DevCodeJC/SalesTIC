@@ -1,6 +1,10 @@
 header{
-    background-color: $negro;
-    
+    background-image: url(/SalesTIC/img/gradients.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    //filter: brightness(70%);
+
     h1{
         color: $blanco;
         text-align: center;
@@ -9,9 +13,12 @@ header{
             margin: 0;
         }
     }
+    span{
+        font-weight: 300;
+    }
 }
 .container-header{
-    padding: 2rem;
+    padding: 3rem;
     @include tablet{
         display: flex;
         justify-content: space-between;
@@ -20,9 +27,20 @@ header{
 }
 .nav-principal{
     @include tablet{
-        
         display: flex;
         gap: 2rem;
+    }
+    p{
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: $blanco;
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+    img{
+        max-height: 2.5rem;
     }
     a{
         display: block;
@@ -30,9 +48,13 @@ header{
         color: $blanco;
         font-size: 1.8rem;
         margin-bottom: 1rem;
-
+        
         &:hover{
-            color:$verde;
+            color:$lineas;
         }
+        
+    }
+    span{
+        margin-top: 3rem;
     }
 }

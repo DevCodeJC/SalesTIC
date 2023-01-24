@@ -1,0 +1,25 @@
+table{
+    background-color: $blanco;
+    margin-top: 3rem;
+    width: 100%;
+    border-spacing: 0;
+    
+    thead{
+        background-color: $negro;
+
+        th{
+            color: $blanco;
+            padding: 1rem;
+        }
+    }
+    .action{
+        color: $verde;
+    }
+}
+.img-update{
+    margin: 2rem;
+    width: 60%;
+}
+.space-row{
+    margin: 1rem 6rem;
+}

@@ -14,3 +14,20 @@
 .espaciado-abajo{
     margin-bottom: 2rem;
 }
+.error{
+    background-color: $error;
+    color: $blanco;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+.success{
+    background-color: $correcto;
+    color: $blanco;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 3rem 0;
+}
+
